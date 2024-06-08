@@ -1,0 +1,37 @@
+.upload-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.upload-container h2 {
+  margin-bottom: 20px;
+}
+
+.upload-container label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.upload-container input[type="file"] {
+  margin-bottom: 5px;
+}
+
+.upload-container button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-container button[type="submit"]:hover {
+  background-color: #45a049;
+}

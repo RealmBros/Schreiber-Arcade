@@ -1,0 +1,164 @@
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(204, 202, 202);
+  z-index: 1;
+}
+
+.left-section {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 320px;
+}
+
+.schreiber-logo {
+  height: 100px;
+  padding-right: 10px;
+}
+
+.text-logo {
+  font-family: 'Comic Neue';
+  font-weight: bold;
+  color: white;
+  padding-top: 0px;
+  font-size: 40px;
+  width: 200px;
+  text-shadow: 0 0 5px #0000FF, 0 0 5px #0000FF;
+  
+}
+
+.search-bar {
+  flex: 1;
+  height: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 5px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+
+}
+
+.search-button {
+  height: 35px;
+  width: 45px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -2px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button:active {
+  background-color: rgba(240, 240, 240, 0.4)
+}
+
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: rgb(138, 138, 138);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 12px;
+  left: -2px;
+  bottom: -30px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  
+}
+
+.search-button:hover .tooltip,
+.upload-button:hover .tooltip,
+.sign-up:hover .tooltip {
+  opacity: .9;
+}
+
+.search-icon {
+  height: 30px;
+}
+
+.upload-button,
+.sign-up {
+  position: relative;
+  
+}
+
+.upload-button .tooltip,
+.sign-up .tooltip {
+  position: absolute;
+  background-color: rgb(138, 138, 138);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px; 
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+
+.sign-up {
+  height: 60px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: 'Coming Soon';
+  font-weight: bold;
+  background-image: linear-gradient(to right, #98D9E1, #5CA0F2);
+  margin-right: 50px;
+}
+
+.upload-button {
+  height: 60px;
+  margin-right: 50px;   
+  border-radius: 15px;
+  width: 100px;
+  font-family: 'Coming Soon';
+  font-weight: bold;
+  font-size: 15px;
+  background-image: linear-gradient(to right, #98FCBD, #9CDAF8);
+}

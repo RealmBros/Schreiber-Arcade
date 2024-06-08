@@ -1,0 +1,46 @@
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 20px;
+}
+
+@media (max-width: 1100px) {
+  .game-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1399px) {
+  .game-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1400px) {
+  .game-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.game-item {
+  position: relative;
+}
+
+.game-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: fit;
+}
+
+.game-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
+  margin-bottom: 4px; /* Add this */
+}
